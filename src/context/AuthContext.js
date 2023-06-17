@@ -33,13 +33,16 @@ export const AuthProvider = ({ children }) => {
   };
 
   const logOut = async () => {
-    try {
+    const response = await signOut(auth);
+    console.log(response);
+
+    /* try {
       await signOut(auth);
       // La sesión se cerró correctamente
     } catch (error) {
       // Ocurrió un error al cerrar la sesión
       console.error("Error al cerrar sesión:", error);
-    }
+    } */
   };
 
   return (

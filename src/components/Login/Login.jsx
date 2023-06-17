@@ -13,16 +13,12 @@ export const Login = () => {
   };
 
   return (
-    <>
-      <div>
-        <form>
-          <div>
-            <button onClick={(e) => handleLoginGoogle(e)}>
-              Iniciar sesion con google
-            </button>
-          </div>
-        </form>
-      </div>
-    </>
+    <div>
+      <form>
+        <div>
+          <button onClick={handleLoginGoogle}>Iniciar sesión con Google</button>
+        </div>
+      </form>
+    </div>
   );
 };
